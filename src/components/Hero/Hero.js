@@ -3,7 +3,7 @@ import Typical from "react-typical";
 import Projects from "../ProjectLink/ProjectLinks";
 
 import Socials from "../Socials/Socials";
-import { Wrapper, TypicalWrapper, SocialsWrapper } from "./HeroStyles";
+import { Wrapper, TypicalWrapper } from "./HeroStyles";
 
 const Hero = () => {
   const [showComponent, setShowComponent] = useState(false);
@@ -12,7 +12,7 @@ const Hero = () => {
     setInterval(() => {
       setShowComponent(!showComponent);
     }, 18000);
-  }, []);
+  });
 
   return (
     <Wrapper>
