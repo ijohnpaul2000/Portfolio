@@ -11,7 +11,7 @@ const Hero = () => {
   useEffect(() => {
     setInterval(() => {
       setShowComponent(!showComponent);
-    });
+    }, 18000);
   }, []);
 
   return (
