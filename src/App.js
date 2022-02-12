@@ -5,9 +5,9 @@ import ProjectsPage from "./pages/ProjectsPage";
 
 function App() {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename={window.location.pathname || ""}>
       <Routes>
-        <Route path="/home" exact element={<HomePage />} />
+        <Route path="/" exact element={<HomePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
       </Routes>
     </HashRouter>
