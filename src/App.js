@@ -5,7 +5,7 @@ import ProjectsPage from "./pages/ProjectsPage";
 
 function App() {
   return (
-    <HashRouter basename={window.location.pathname || "/"}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" exact element={<HomePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
